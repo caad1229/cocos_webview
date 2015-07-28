@@ -1,0 +1,31 @@
+# cocos
+bin
+
+# android
+assets
+gen
+armeabi
+x86
+obj
+asserts
+local.properties
+
+# mac
+.DS_Store
+
+# ios
+build
+project.xcworkspace
+xcuserdata
+
+# Linux
+linux-build
+Debug
+
+# eclipse
+.cproject
+.project
+.settings
+.classpath
+
+cocos2d
