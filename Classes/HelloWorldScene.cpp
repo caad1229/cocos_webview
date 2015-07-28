@@ -88,6 +88,21 @@ bool HelloWorld::init()
 
         this->addChild(webView);
     }
+    //--------------------------
+    // webview : ローカル
+    //--------------------------
+    {
+        auto webView = cocos2d::experimental::ui::WebView::create();
+        webView->loadFile("help.html");
+
+        // ポジションとサイズを調整
+        Size screen = Director::getInstance()->getOpenGLView()->getDesignResolutionSize();
+        webView->setAnchorPoint(Vec2::ANCHOR_MIDDLE_LEFT);
+        webView->setContentSize(Size(screen.width/2, screen.height));
+        webView->setPosition(Vec2(0, screen.height/2));
+
+        this->addChild(webView);
+    }
 
     return true;
 }
